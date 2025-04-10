@@ -4,9 +4,9 @@
 #include <memory.h>
 
 int N;
+int pos[2][2];
 int cnt[204][204];
 bool visited[204][204];
-int pos[2][2];
 char command[204][204];
 
 int dy[4] = {0, 0, 1, -1};
