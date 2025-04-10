@@ -51,7 +51,7 @@ int main() {
 		sticks[end].push_back(disk);
 	}
 
-	// 각 pillar에 있는 disk 크기의 합을 출력
+	// 각 pillar에 있는 disk의 합을 출력
 	for (int pillar = 1; pillar <= 3; ++pillar) {
 		int total = 0;
 		for (size_t i = 0; i < sticks[pillar].size(); ++i)
