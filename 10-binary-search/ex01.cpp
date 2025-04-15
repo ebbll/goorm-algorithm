@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <vector>
+#include <algorithm>
 
 int N, M;
 std::vector<int> A;
@@ -21,20 +22,19 @@ int main(void) {
 	std::sort(A.begin(), A.end());
 	std::cin >> M;
 
-	// 이분 탐색 수행
+	// 수열 A 안에서 B를 찾는 이분 탐색 수행
 	while (M--) {
 		int start = 0, end = N - 1;
 		bool check = false;
 		std::cin >> B;
 
-		while (start < end) {
-			std::cout << "[" << start << ", " << end << "]\n";
+		while (start <= end) {
 			int mid = (start + end) / 2;
 			if (A[mid] < B) start = mid + 1;
 			else if (A[mid] > B) end = mid - 1;
 			else {
 				check = true;
-				break;
+				break ;
 			}
 		}
 
