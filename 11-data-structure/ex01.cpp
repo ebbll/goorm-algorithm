@@ -23,11 +23,8 @@ int main(void) {
 		// 현재 높이보다 낮은 것들은 가려지므로, pop
 		while (!s.empty() && heights[s.top()] <= heights[curr])
 			s.pop();
-		// 갱신
 		s.push(curr);
 	}
 
 	return 0;
 }
-
-// SOLVE 완료!
