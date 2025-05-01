@@ -1,3 +1,5 @@
+/* 연합 */
+
 #include <iostream>
 #include <vector>
 
